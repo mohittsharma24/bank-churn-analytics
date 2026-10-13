@@ -7,7 +7,7 @@ st.title("Bank Customer Churn Analytics")
 st.write("Explore how customer activity and product use relate to churn.")
 
 file_path = r"C:\Users\lenovo\Downloads\European_Bank.csv"
-data = pd.read_csv(file_path)
+file_path = "European_Bank.csv"
 
 st.sidebar.header("Customer filters")
 engagement_filter = st.sidebar.selectbox(
