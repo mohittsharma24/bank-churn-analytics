@@ -14,7 +14,7 @@ engagement_filter = st.sidebar.selectbox(
     "Engagement status",
     ["All", "Active", "Inactive"]
 )
-
+data = pd.read_csv(file_path)
 min_products = int(data["NumOfProducts"].min())
 max_products = int(data["NumOfProducts"].max())
 product_range = st.sidebar.slider(
